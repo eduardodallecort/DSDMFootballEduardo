@@ -1,0 +1,2 @@
+rootProject.name = "DSDM Football Eduardo"
+include ':app'
