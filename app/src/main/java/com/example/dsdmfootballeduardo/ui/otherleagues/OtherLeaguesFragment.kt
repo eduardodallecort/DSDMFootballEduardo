@@ -1,4 +1,4 @@
-package com.example.dsdmfootballeduardo.ui.dashboard
+package com.example.dsdmfootballeduardo.ui.otherleagues
 
 import android.os.Bundle
 import android.view.LayoutInflater
@@ -8,12 +8,11 @@ import android.widget.TextView
 import androidx.fragment.app.Fragment
 import androidx.lifecycle.Observer
 import androidx.lifecycle.ViewModelProvider
-import com.example.dsdmfootballeduardo.R
 import com.example.dsdmfootballeduardo.databinding.FragmentDashboardBinding
 
-class DashboardFragment : Fragment() {
+class OtherLeaguesFragment : Fragment() {
 
-    private lateinit var dashboardViewModel: DashboardViewModel
+    private lateinit var dashboardViewModel: OtherLeaguesViewModel
     private var _binding: FragmentDashboardBinding? = null
 
     // This property is only valid between onCreateView and
@@ -26,7 +25,7 @@ class DashboardFragment : Fragment() {
             savedInstanceState: Bundle?
     ): View? {
         dashboardViewModel =
-                ViewModelProvider(this).get(DashboardViewModel::class.java)
+                ViewModelProvider(this).get(OtherLeaguesViewModel::class.java)
 
         _binding = FragmentDashboardBinding.inflate(inflater, container, false)
         val root: View = binding.root
